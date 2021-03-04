@@ -1,0 +1,52 @@
+﻿body, html {font-size: 44px;}
+@media only screen and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) , screen and (-webkit-device-pixel-ratio:1​.5){
+    /** Header **/
+    header {background: url('/static/images/Tablet Voting.jpg'); height: 150px; width: 100%; border-radius: 15px;}
+    .logo {margin-top: -25px; margin-left: 5px; float: left;  width: 300px; height: 200px;}
+
+    /* The container <div> - needed to position the dropdown content */
+    .Menu {margin-top: 25px;}
+    /* Menu Button */
+    .MenuBtn {display: inherit; padding: 10px; border-radius: 15px; cursor: pointer; font-size: 60px; width: 100%;}
+    /* Menu button on hover & focus */
+    .MenuBtn:hover, .MenuBtn:focus {background-color: springgreen;}
+    /* Menu Content (Hidden by Default) */
+    .MenuContent {display: none; z-index: 1; font-size: 60px; background-color: lightgreen; position: relative; width: 400px; height: 600px;}
+    /* Links inside the menu */
+    .MenuContent a {display: block;}
+    /* Show the menu content (use JS to add this class when the user clicks on the menu button) */
+    .show {display: block;}
+
+    /** Centering the body content **/
+    .container {min-width: 480px; max-width: 97%; margin: 0 auto; overflow: auto;}
+
+    /** Formatting the page content **/
+    h1 {font-size: 80px;}
+    h2 {font-size: 64px;}
+    p {font-size: 44px;}
+    marquee {background-color: lightgreen; font-size: 44px;}
+    input {font-size: 44px;}
+    table {font-size: 44px; border-spacing: 30px 5px;}
+    th {font-size: 64px;}
+    
+    /** Images **/
+    .profile {width: 200px; height: 200px;}
+    .contact {width: 50px; height: 50px;}
+
+    /** Buttons **/
+    button {font-size: 44px; width: 35%; border-radius: 15px; cursor: pointer;}
+    select {background: lightgray; font-size: 30px; border-radius: 10px; cursor: pointer;}
+
+    /* Governor Menu Content (Hidden by Default) */
+    .StateList {display: none; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
+    /* Links inside the governor menu */
+    .StateList a {padding: 10px 10px; text-decoration: none;}
+    /* Change color of governor menu links on hover */
+    .StateList a:hover {background-color: silver;}
+    /* Show the governor menu content (use JS to add this class when the user clicks on the menu button) */
+    .view {display: block;}
+
+    /** Footer **/
+    .footer-menu {font-size:60px;}
+    .footer-image { height: 140px; width: 170px;}
+}
