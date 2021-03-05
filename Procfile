@@ -1,1 +1,1 @@
-web: gunicorn app.Vote:app
+web: gunicorn app.Inec_vote:app
