@@ -709,7 +709,7 @@ def set_time():
             con.rollback()
             status = "error in insert operation"
         finally:
-            return render_template('admin.html', message=status)
+            return render_template('admin.html', timer=status)
 
 
 # reset function
@@ -833,7 +833,7 @@ def db_reset():
             cur.execute("DELETE FROM ZamfaraState")
         con.commit()
         msg = database + " Data Deleted"
-        return render_template('admin.html', message=msg)
+        return render_template('admin.html', dbase=msg)
 
 
 if __name__ == '__main__':
