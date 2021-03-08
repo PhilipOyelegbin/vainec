@@ -1,1 +1,1 @@
-web:gunicorn app.Ballot:app
+web: gunicorn Ballot:app
