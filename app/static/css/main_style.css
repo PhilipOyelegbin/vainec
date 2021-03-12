@@ -33,7 +33,7 @@ input {font-size: 16px;}
 table {font-size: 16px; border-spacing: 20px 5px;}
 td {text-align: center;}
 
-.grid_view { display: grid;}
+.grid_view {display: grid;}
 .grid_list {width: 50%;}
 
 /** Images **/
