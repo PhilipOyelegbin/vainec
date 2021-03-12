@@ -34,7 +34,7 @@ table {font-size: 16px; border-spacing: 20px 5px;}
 td {text-align: center;}
 
 .grid_view {display: grid;}
-.grid_list {width: 50%;}
+.grid_list {width: 50%; text-align: center;}
 
 /** Images **/
 .slider {height: 500px; width: 90%;}
