@@ -5,8 +5,8 @@
         <!-- Add Page Heading -->
         <h1>Admin Section</h1>
         <!-- Add Timer Section -->
-        <div class="grid_view">
-            <div class="grid_list">
+        <article class="grid_view">
+            <span class="grid_list">
                 Set Timer
                 <form action="{{ url_for('set_time') }}" method="POST" autocomplete="off">
                     <table>
@@ -27,9 +27,9 @@
                 </form>
                 <!-- Add Feedback Section -->
                 <p>{{ timer }}</p>
-            </div>
+            </span>
             <br>
-            <div class="grid_list">
+            <span class="grid_list">
                 Reset Database
                 <!-- Add Reset Section -->
                 <p style="color:red;">Confirm authorization and double check the specific data to delete before you reset the database.</p>
@@ -82,8 +82,8 @@
                 </form>
                 <!-- Add Feedback Section -->
                 <p>{{ dbase }}</p>
-            </div>
-        </div>
+            </span>
+        </article>
     </section>
 </div>
 {% endblock %}
