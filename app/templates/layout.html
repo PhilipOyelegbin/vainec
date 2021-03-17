@@ -24,11 +24,11 @@
                 <!-- Add Navigation Bar -->
                 <div class="Menu">
                     <button type="button" onclick="menu()" class="MenuBtn"> ≡ Menu </button>
-                    <div id="contents" class="MenuContent">
+                    <nav id="contents" class="MenuContent">
                         <a href="{{ url_for('home') }}">Home</a>
                         <a href="{{ url_for('admin') }}">Admin</a>
                         <a href="{{ url_for('about') }}">About</a>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </header>
@@ -52,7 +52,7 @@
                     </p>
                     <i>...your vote surely counts!</i>
                     <br>
-                    <a href="https://oyetekofficial.herokuapp.com" target="_blank"><img class="footer-image" src="{{url_for('static', filename='images/OYETEK Logo.png')}}" alt="OYETEK" /></a>
+                    <a href="https://oyetek.herokuapp.com" target="_blank"><img class="footer-image" src="{{url_for('static', filename='images/OYETEK Logo.png')}}" alt="OYETEK" /></a>
                 </div>
                 <p class="footer-bottom">© 2021 OYETEK :: Development Team :: All Rights Reserved. Designed by OYETEK.</p>
             </center>

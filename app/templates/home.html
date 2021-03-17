@@ -1,76 +1,74 @@
 {% extends "layout.html" %}
 {% block content %}
-<div class="home">
-    <section>
-        <!-- Add Page Heading -->
-        <h1>Vote Arbiter | INEC</h1>
-        <!-- Add Input Section -->
-        <p><marquee direction="left"><strong>{{ info }}</strong></marquee></p>
-        <img id="transition" class="slider" src="{{url_for('static', filename='images/Vote.png')}}" alt="Image"/>
-        <div class="description">
-            Welcome to Nigerians first online voting center. Vote Arbiter is a real time voting center to serve a
-            transparent, free, fair and credible election as one of its mission statement and values being offered
-            to Nigerians incorporated by INEC. This is the first of it's kind in the electoral system of Nigeria.<br>
-            <a href="https://inecnigeria.org">www.inecnigeria.org</a>
-        </div>
-        <br>
-        <form action="{{ url_for('president') }}">
-            <button class="yellow" onclick=president()>General Election</button>
-        </form>
-        <br>
-        <button class="cyan" onclick=governorship_vote_center()>Governorship Election</button>
-        <div id="state" class="StateList">
-            <table>
-                <tr>
-                    <td><a href="{{ url_for('abia') }}">Abia</a></td>
-                    <td><a href="{{ url_for('adamawa') }}">Adamawa</a></td>
-                    <td><a href="{{ url_for('akwaibom') }}">Akwa Ibom</a></td>
-                    <td><a href="{{ url_for('anambra') }}">Anambra</a></td>
-                    <td><a href="{{ url_for('bauchi') }}">Bauchi</a></td>
-                    <td><a href="{{ url_for('bayelsa') }}">Bayelsa</a></td>
-                </tr>
-                <tr>
-                    <td><a href="{{ url_for('benue') }}">Benue</a></td>
-                    <td><a href="{{ url_for('borno') }}">Borno</a></td>
-                    <td><a href="{{ url_for('crossriver') }}">Cross River</a></td>
-                    <td><a href="{{ url_for('delta') }}">Delta</a></td>
-                    <td><a href="{{ url_for('ebonyi') }}">Ebonyi</a></td>
-                    <td><a href="{{ url_for('edo') }}">Edo</a></td>
-                </tr>
-                <tr>
-                    <td><a href="{{ url_for('ekiti') }}">Ekiti</a></td>
-                    <td><a href="{{ url_for('enugu') }}">Enugu</a></td>
-                    <td><a href="{{ url_for('gombe') }}">Gombe</a></td>
-                    <td><a href="{{ url_for('imo') }}">Imo</a></td>
-                    <td><a href="{{ url_for('jigawa') }}">Jigawa</a></td>
-                    <td><a href="{{ url_for('kaduna') }}">Kaduna</a></td>
-                </tr>
-                <tr>
-                    <td><a href="{{ url_for('kano') }}">Kano</a></td>
-                    <td><a href="{{ url_for('kastina') }}">Kastina</a></td>
-                    <td><a href="{{ url_for('kebbi') }}">Kebbi</a></td>
-                    <td><a href="{{ url_for('kogi') }}">Kogi</a></td>
-                    <td><a href="{{ url_for('kwara') }}">Kwara</a></td>
-                    <td><a href="{{ url_for('lagos') }}">Lagos</a></td>
-                </tr>
-                <tr>
-                    <td><a href="{{ url_for('nasarawa') }}">Nasarawa</a></td>
-                    <td><a href="{{ url_for('niger') }}">Niger</a></td>
-                    <td><a href="{{ url_for('ogun') }}">Ogun</a></td>
-                    <td><a href="{{ url_for('ondo') }}">Ondo</a></td>
-                    <td><a href="{{ url_for('osun') }}">Osun</a></td>
-                    <td><a href="{{ url_for('oyo') }}">Oyo</a></td>
-                </tr>
-                <tr>
-                    <td><a href="{{ url_for('plateau') }}">Plateau</a></td>
-                    <td><a href="{{ url_for('rivers') }}">Rivers</a></td>
-                    <td><a href="{{ url_for('sokoto') }}">Sokoto</a></td>
-                    <td><a href="{{ url_for('taraba') }}">Taraba</a></td>
-                    <td><a href="{{ url_for('yobe') }}">Yobe</a></td>
-                    <td><a href="{{ url_for('zamfara') }}">Zamfara</a></td>
-                </tr>
-            </table>
-        </div>
-    </section>  
-</div>
+<main>
+    <!-- Add Page Heading -->
+    <h1>Vote Arbiter | INEC</h1>
+    <!-- Add Input Section -->
+    <p><marquee direction="left"><strong>{{ info }}</strong></marquee></p>
+    <img id="transition" class="slider" src="{{url_for('static', filename='images/Vote.png')}}" alt="Image"/>
+    <div class="description">
+        Welcome to Nigerians first online voting center. Vote Arbiter is a real time voting center to serve a
+        transparent, free, fair and credible election as one of its mission statement and values being offered
+        to Nigerians incorporated by INEC. This is the first of it's kind in the electoral system of Nigeria.<br>
+        <a href="https://inecnigeria.org">www.inecnigeria.org</a>
+    </div>
+    <br>
+    <form action="{{ url_for('president') }}">
+        <button class="yellow">General Election</button>
+    </form>
+    <br>
+    <button class="cyan" onclick=governorship_vote_center()>Governorship Election</button>
+    <div id="state" class="StateList">
+        <table>
+            <tr>
+                <td><a href="{{ url_for('abia') }}">Abia</a></td>
+                <td><a href="{{ url_for('adamawa') }}">Adamawa</a></td>
+                <td><a href="{{ url_for('akwaibom') }}">Akwa Ibom</a></td>
+                <td><a href="{{ url_for('anambra') }}">Anambra</a></td>
+                <td><a href="{{ url_for('bauchi') }}">Bauchi</a></td>
+                <td><a href="{{ url_for('bayelsa') }}">Bayelsa</a></td>
+            </tr>
+            <tr>
+                <td><a href="{{ url_for('benue') }}">Benue</a></td>
+                <td><a href="{{ url_for('borno') }}">Borno</a></td>
+                <td><a href="{{ url_for('crossriver') }}">Cross River</a></td>
+                <td><a href="{{ url_for('delta') }}">Delta</a></td>
+                <td><a href="{{ url_for('ebonyi') }}">Ebonyi</a></td>
+                <td><a href="{{ url_for('edo') }}">Edo</a></td>
+            </tr>
+            <tr>
+                <td><a href="{{ url_for('ekiti') }}">Ekiti</a></td>
+                <td><a href="{{ url_for('enugu') }}">Enugu</a></td>
+                <td><a href="{{ url_for('gombe') }}">Gombe</a></td>
+                <td><a href="{{ url_for('imo') }}">Imo</a></td>
+                <td><a href="{{ url_for('jigawa') }}">Jigawa</a></td>
+                <td><a href="{{ url_for('kaduna') }}">Kaduna</a></td>
+            </tr>
+            <tr>
+                <td><a href="{{ url_for('kano') }}">Kano</a></td>
+                <td><a href="{{ url_for('kastina') }}">Kastina</a></td>
+                <td><a href="{{ url_for('kebbi') }}">Kebbi</a></td>
+                <td><a href="{{ url_for('kogi') }}">Kogi</a></td>
+                <td><a href="{{ url_for('kwara') }}">Kwara</a></td>
+                <td><a href="{{ url_for('lagos') }}">Lagos</a></td>
+            </tr>
+            <tr>
+                <td><a href="{{ url_for('nasarawa') }}">Nasarawa</a></td>
+                <td><a href="{{ url_for('niger') }}">Niger</a></td>
+                <td><a href="{{ url_for('ogun') }}">Ogun</a></td>
+                <td><a href="{{ url_for('ondo') }}">Ondo</a></td>
+                <td><a href="{{ url_for('osun') }}">Osun</a></td>
+                <td><a href="{{ url_for('oyo') }}">Oyo</a></td>
+            </tr>
+            <tr>
+                <td><a href="{{ url_for('plateau') }}">Plateau</a></td>
+                <td><a href="{{ url_for('rivers') }}">Rivers</a></td>
+                <td><a href="{{ url_for('sokoto') }}">Sokoto</a></td>
+                <td><a href="{{ url_for('taraba') }}">Taraba</a></td>
+                <td><a href="{{ url_for('yobe') }}">Yobe</a></td>
+                <td><a href="{{ url_for('zamfara') }}">Zamfara</a></td>
+            </tr>
+        </table>
+    </div>
+</main>
 {% endblock %}
