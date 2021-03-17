@@ -25,7 +25,6 @@ for row in rows:
 commence = start_d + ", " + start_t
 deadline = end_d + ", " + end_t
 today = time.strftime("%Y-%m-%d, %I:%M:%p")
-print(today)
 
 def vote(Table):
     if request.method == "POST":
