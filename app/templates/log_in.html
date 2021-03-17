@@ -1,20 +1,18 @@
 {% extends "layout.html" %}
 {% block content %}
-<div class="log_in">
-    <section>
-        <!-- Add Page Heading -->
-        <h1>Log In...</h1>
-        <!-- Add Feedback Section -->
-        <form action="{{ url_for('log_in') }}" method="POST" autocomplete="off">
-            <p style="color:red;">This is a restricted area, only authorized personnel is allowed.</p>
-            Username:<br>
-            <input type="text" name="Username" required><br>
-            Password:<br>
-            <input type="password" name="Password" required><br>
-            <br>
-            <button class="yellow" onclick="log_in()">Log In</button>
-        </form>
-        <p>{{ alarm }}</p>
-    </section>
-</div>
+<main>
+    <!-- Add Page Heading -->
+    <h1>Log In...</h1>
+    <!-- Add Feedback Section -->
+    <form action="{{ url_for('log_in') }}" method="POST" autocomplete="off">
+        <p style="color:red;">This is a restricted area, only authorized personnel is allowed.</p>
+        Username:<br>
+        <input type="text" name="Username" required><br>
+        Password:<br>
+        <input type="password" name="Password" required><br>
+        <br>
+        <button class="yellow">Log In</button>
+    </form>
+    <p>{{ alarm }}</p>
+</main>
 {% endblock %}

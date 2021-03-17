@@ -1,44 +1,42 @@
 {% extends "layout.html" %}
 {% block content %}
-<div class="kaduna">
-    <section>
-        <!-- Add Page Heading -->
-        <h1>Kaduna Governorship Election</h1>
-        <!-- Add Input Section -->
-        <form action="{{ url_for('kaduna') }}" method="POST" autocomplete="off">
-            PVC Serial Number:<br>
-            <input type="number" name="pvc" required><br>
-            Political Party:<br>
-            <select name="political_party">
-                <optgroup label="Political Party">
-                    <option value="AA">AA</option>
-                    <option value="AAC">AAC</option>
-                    <option value="ACCORD">ACCORD</option>
-                    <option value="ADC">ADC</option>
-                    <option value="ADP">ADP</option>
-                    <option value="APC">APC<br>
-                    <option value="APGA">APGA</option>
-                    <option value="APM">APM</option>
-                    <option value="APP">APP</option>
-                    <option value="BOOT">BOOT</option>
-                    <option value="LP">LP</option>
-                    <option value="NNPP">NNPP<br>
-                    <option value="NRM">NRM</option>
-                    <option value="PDP">PDP</option>
-                    <option value="PRP">PRP</option>
-                    <option value="SDP">SDP</option>
-                    <option value="YPP">YPP</option>
-                    <option value="ZLP">ZLP</option>
-                </optgroup>
-            </select>
-            <br>
-            <button class="blue" onclick=vote_kaduna()>VOTE</button>
-        </form>
+<main>
+    <!-- Add Page Heading -->
+    <h1>Kaduna Governorship Election</h1>
+    <!-- Add Input Section -->
+    <form action="{{ url_for('kaduna') }}" method="POST" autocomplete="off">
+        PVC Serial Number:<br>
+        <input type="number" name="pvc" required><br>
+        Political Party:<br>
+        <select name="political_party">
+            <optgroup label="Political Party">
+                <option value="AA">AA</option>
+                <option value="AAC">AAC</option>
+                <option value="ACCORD">ACCORD</option>
+                <option value="ADC">ADC</option>
+                <option value="ADP">ADP</option>
+                <option value="APC">APC<br>
+                <option value="APGA">APGA</option>
+                <option value="APM">APM</option>
+                <option value="APP">APP</option>
+                <option value="BOOT">BOOT</option>
+                <option value="LP">LP</option>
+                <option value="NNPP">NNPP<br>
+                <option value="NRM">NRM</option>
+                <option value="PDP">PDP</option>
+                <option value="PRP">PRP</option>
+                <option value="SDP">SDP</option>
+                <option value="YPP">YPP</option>
+                <option value="ZLP">ZLP</option>
+            </optgroup>
+        </select>
         <br>
-        <hr width="80%">
-        <!-- Add Result Field -->
-        <h2>Result:</h2>
-        <img class="graph-plot" src="data:image/png;base64, {{ result }}">
-    </section>
-</div>
+        <button class="blue">VOTE</button>
+    </form>
+    <br>
+    <hr width="80%">
+    <!-- Add Result Field -->
+    <h2>Result:</h2>
+    <img class="graph-plot" src="data:image/png;base64, {{ result }}">
+</main>
 {% endblock %}
