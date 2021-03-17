@@ -1,8 +1,10 @@
-﻿body, html {font-size: 44px;}
+﻿/** Mobile - Formatting the body area **/
+body, html {font-size: 44px;}
+
 @media only screen and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) , screen and (-webkit-device-pixel-ratio:1​.5){
     /** Header **/
-    header {background: url('/static/images/Tablet Voting.jpg'); height: 150px; width: 100%; border-radius: 15px;}
-    .logo {margin-top: -25px; margin-left: 5px; float: left;  width: 300px; height: 200px;}
+    header {height: 150px;}
+    .logo {margin-top: -35px; width: 300px; height: 220px;}
 
     /* The container <div> - needed to position the dropdown content */
     .Menu {margin-top: 25px;}
@@ -18,33 +20,36 @@
     .show {display: block;}
 
     /** Centering the body content **/
-    .container {min-width: 480px; max-width: 97%; margin: 0 auto; overflow: auto;}
+    .container {min-width: 250px; max-width: 97%; margin: 0 auto; overflow: auto;}
 
     /** Formatting the page content **/
     h1 {font-size: 80px;}
     h2 {font-size: 64px;}
     p {font-size: 44px;}
-    marquee {background-color: lightgreen; font-size: 44px;}
+    marquee {font-size: 44px;}
     input {font-size: 44px;}
     table {font-size: 44px; border-spacing: 30px 5px;}
     th {font-size: 64px;}
     
+    .grid_view {display: block;}
+
     /** Images **/
+    .graph-plot {height: 800px;}
     .profile {width: 200px; height: 200px;}
     .contact {width: 50px; height: 50px;}
 
     /** Buttons **/
-    button {font-size: 44px; width: 35%; border-radius: 15px; cursor: pointer;}
-    select {background: lightgray; font-size: 30px; border-radius: 10px; cursor: pointer;}
+    button {font-size: 44px; width: 35%;}
+    select {font-size: 30px;}
 
     /* Governor Menu Content (Hidden by Default) */
-    .StateList {display: none; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
+    /*.StateList {display: none; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
     /* Links inside the governor menu */
-    .StateList a {padding: 10px 10px; text-decoration: none;}
+    /*.StateList a {padding: 10px 10px; text-decoration: none;}
     /* Change color of governor menu links on hover */
-    .StateList a:hover {background-color: silver;}
+    /*.StateList a:hover {background-color: silver;}
     /* Show the governor menu content (use JS to add this class when the user clicks on the menu button) */
-    .view {display: block;}
+    /*.view {display: block;}
 
     /** Footer **/
     .footer-menu {font-size:60px;}

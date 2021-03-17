@@ -1,9 +1,9 @@
 /** Formatting the body area **/
-body, html {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 1.5;}
+body, html {font-family: "Clarendon BT", sans-serif, "Helvetica Neue", Helvetica, Arial; line-height: 1.5;}
 
 /** Header **/
 header {background: url('/static/images/Tablet Voting.jpg'); height: 80px; width: 100%; border-radius: 15px;}
-.logo {margin-top: -20px; margin-left: 5px; float: left;  width: 200px; height: 120px;}
+.logo {margin-top: -25px; margin-left: 5px; float: left; width: 200px; height: 130px;}
 
 /* The container <div> - needed to position the dropdown content */
 .Menu {float: right; margin-top: 15px; margin-right: 15px;}
@@ -20,11 +20,8 @@ header {background: url('/static/images/Tablet Voting.jpg'); height: 80px; width
 .container {min-width: 500px; max-width: 97%; margin: 0 auto; overflow: auto;}
 
 /** Formatting the page content **/
-div.home, div.feedback, div.log_in, div.admin, div.about, div.president, div.abia, div.adamawa, div.akwaibom, div.anambra, div.bauchi,
-div.bayelsa, div.benue, div.borno, div.crossriver, div.delta, div.ebonyi, div.edo, div.ekiti, div.enugu, div.gombe, div.imo, div.jigawa,
-div.kaduna, div.kano, div.kastina,div.kebbi, div.kogi, div.kwara, div.lagos, div.nasarawa, div.niger, div.ogun, div.ondo, div.osun, div.oyo,
-div.plateau, div.rivers, div.sokoto, div.taraba, div.yobe, div.zamfara {padding: 10px 0 10px 1; background-color: lavender; border-radius: 15px;}
-h1 {color: green; text-shadow: 5px 4px 4px white;}
+main {padding: 10px 0 10px 1; background-color: lavender; border-radius: 15px;}
+h1 {color: lightgreen; text-shadow: 5px 4px 4px white;}
 p {padding: 10px;}
 .justify {text-align: justify;}
 marquee {background-color: lightgreen;}
@@ -33,13 +30,14 @@ input {font-size: 16px;}
 table {font-size: 16px; border-spacing: 20px 5px;}
 td {text-align: center;}
 
-.grid_view {display: grid;}
-.grid_list {width: 50%; text-align: center;}
+.grid_view {display: grid; grid-template-areas: "col1 col2";}
+.col1 {grid-area: col1;}
+.col2 {grid-area: col2;}
 
 /** Images **/
 .slider {height: 500px; width: 90%;}
 .candidate {width: 70px; height: 70px;}
-.graph-plot {height: 500px; width: 97%;}
+.graph-plot {height: 500px; width: 95%;}
 .profile {width: 150px; height: 150px;}
 .contact {width: 25px; height: 25px;}
 
