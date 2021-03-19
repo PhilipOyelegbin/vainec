@@ -24,7 +24,8 @@ for row in rows:
 # Close the voting site
 commence = start_d + ", " + start_t
 deadline = end_d + ", " + end_t
-today = time.strftime("%Y-%m-%d, %I:%M:%p")
+today = time.strftime("%Y-%m-%d, %H:%M:%p")
+print(today)
 
 def vote(Table):
     if request.method == "POST":
